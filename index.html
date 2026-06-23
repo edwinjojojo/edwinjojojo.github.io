@@ -81,6 +81,63 @@
     .ico { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
     .ico.solid { fill: currentColor; stroke: none; }
     .bico { width: 1em; height: 1em; fill: currentColor; flex-shrink: 0; }
+    /* brand colors (original) */
+    .bc-anaconda { color: #44A833; }
+    .bc-android { color: #3DDC84; }
+    .bc-capacitor { color: #119EFF; }
+    .bc-claude { color: #D97757; }
+    .bc-d3dotjs { color: #F9A03C; }
+    .bc-dask { color: #FC6E6B; }
+    .bc-docker { color: #2496ED; }
+    .bc-duckdb { color: #FFF000; }
+    .bc-esbuild { color: #FFCF00; }
+    .bc-eslint { color: #4B32C3; }
+    .bc-express { color: #000000; }
+    .bc-fastapi { color: #009688; }
+    .bc-ffmpeg { color: #007808; }
+    .bc-firebase { color: #DD2C00; }
+    .bc-git { color: #F03C2E; }
+    .bc-github { color: #181717; }
+    .bc-gnubash { color: #4EAA25; }
+    .bc-googlecloud { color: #4285F4; }
+    .bc-googledrive { color: #4285F4; }
+    .bc-googlegemini { color: #8E75B2; }
+    .bc-googlesheets { color: #34A853; }
+    .bc-gradle { color: #02303A; }
+    .bc-greensock { color: #88CE02; }
+    .bc-html5 { color: #E34F26; }
+    .bc-javascript { color: #F7DF1E; }
+    .bc-jupyter { color: #F37626; }
+    .bc-leaflet { color: #199900; }
+    .bc-n8n { color: #EA4B71; }
+    .bc-nodedotjs { color: #5FA04E; }
+    .bc-numpy { color: #013243; }
+    .bc-openstreetmap { color: #7EBC6F; }
+    .bc-pandas { color: #150458; }
+    .bc-playwright { color: #2EAD33; }
+    .bc-plotly { color: #7A76FF; }
+    .bc-polars { color: #0075FF; }
+    .bc-postcss { color: #DD3A0A; }
+    .bc-postgresql { color: #4169E1; }
+    .bc-pydantic { color: #E92063; }
+    .bc-pytest { color: #0A9EDC; }
+    .bc-python { color: #3776AB; }
+    .bc-react { color: #61DAFB; }
+    .bc-redis { color: #FF4438; }
+    .bc-scikitlearn { color: #F7931E; }
+    .bc-scipy { color: #8CAAE6; }
+    .bc-sqlite { color: #003B57; }
+    .bc-streamlit { color: #FF4B4B; }
+    .bc-supabase { color: #3FCF8E; }
+    .bc-tailwindcss { color: #06B6D4; }
+    .bc-telegram { color: #26A5E4; }
+    .bc-threedotjs { color: #000000; }
+    .bc-twilio { color: #F22F46; }
+    .bc-typescript { color: #3178C6; }
+    .bc-vite { color: #9135FF; }
+    .bc-vitest { color: #00FF74; }
+    .bc-vuedotjs { color: #4FC08D; }
+    .bc-zod { color: #408AFF; }
 
     /* ─── NAV ─── */
     .nav {
@@ -153,7 +210,7 @@
     .ticker-track { align-items: center; }
     .ticker-grp { display: inline-flex; align-items: center; }
     .ticker-grp .tk { font-family: var(--font-display); font-weight: 700; text-transform: uppercase; font-size: clamp(1rem, 2vw, 1.7rem); letter-spacing: -0.01em; padding-inline: 22px; display: inline-flex; align-items: center; gap: 12px; }
-    .ticker-grp .tk .bico { font-size: 0.95em; color: var(--paper); }
+    .ticker-grp .tk .bico { font-size: 0.95em; }
     @keyframes marquee { to { transform: translateX(-50%); } }
     @media (prefers-reduced-motion: reduce) { .ticker-track { animation: none; } }
 
@@ -232,7 +289,7 @@
     .tbx-cat .tbx-n { font-family: var(--font-mono); font-size: 0.64rem; letter-spacing: 0.1em; color: var(--accent); font-weight: 400; }
     .tbx-tags { display: flex; flex-wrap: wrap; gap: 7px; }
     .tbx-tags span { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.02em; padding: 5px 10px; border: 1px solid var(--rule-strong); border-radius: 2px; color: var(--ink); display: inline-flex; align-items: center; gap: 7px; transition: background 0.2s var(--ease), color 0.2s var(--ease), border-color 0.2s var(--ease); }
-    .tbx-tags .bico { color: var(--accent); font-size: 0.95em; }
+    .tbx-tags .bico { font-size: 0.95em; }
     .tbx-tags span:hover .bico { color: var(--paper); }
     .tbx-tags span:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
     @media (max-width: 760px) { .tbx-group { grid-template-columns: 1fr; gap: 11px; } }
@@ -460,28 +517,28 @@
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
       <div class="ticker-grp">
-        <span class="tk"><svg class="bico"><use href="#b-react"/></svg>React</span>
-        <span class="tk"><svg class="bico"><use href="#b-firebase"/></svg>Firebase</span>
-        <span class="tk"><svg class="bico"><use href="#b-typescript"/></svg>TypeScript</span>
-        <span class="tk"><svg class="bico"><use href="#b-python"/></svg>Python</span>
-        <span class="tk"><svg class="bico"><use href="#b-capacitor"/></svg>Capacitor</span>
-        <span class="tk"><svg class="bico"><use href="#b-fastapi"/></svg>FastAPI</span>
-        <span class="tk"><svg class="bico"><use href="#b-postgresql"/></svg>PostGIS</span>
-        <span class="tk"><svg class="bico"><use href="#b-claude"/></svg>Claude API</span>
-        <span class="tk"><svg class="bico"><use href="#b-d3dotjs"/></svg>D3.js</span>
-        <span class="tk"><svg class="bico"><use href="#b-googlecloud"/></svg>Cloud Run</span>
+        <span class="tk"><svg class="bico bc-react"><use href="#b-react"/></svg>React</span>
+        <span class="tk"><svg class="bico bc-firebase"><use href="#b-firebase"/></svg>Firebase</span>
+        <span class="tk"><svg class="bico bc-typescript"><use href="#b-typescript"/></svg>TypeScript</span>
+        <span class="tk"><svg class="bico bc-python"><use href="#b-python"/></svg>Python</span>
+        <span class="tk"><svg class="bico bc-capacitor"><use href="#b-capacitor"/></svg>Capacitor</span>
+        <span class="tk"><svg class="bico bc-fastapi"><use href="#b-fastapi"/></svg>FastAPI</span>
+        <span class="tk"><svg class="bico bc-postgresql"><use href="#b-postgresql"/></svg>PostGIS</span>
+        <span class="tk"><svg class="bico bc-claude"><use href="#b-claude"/></svg>Claude API</span>
+        <span class="tk"><svg class="bico bc-d3dotjs"><use href="#b-d3dotjs"/></svg>D3.js</span>
+        <span class="tk"><svg class="bico bc-googlecloud"><use href="#b-googlecloud"/></svg>Cloud Run</span>
       </div>
       <div class="ticker-grp">
-        <span class="tk"><svg class="bico"><use href="#b-react"/></svg>React</span>
-        <span class="tk"><svg class="bico"><use href="#b-firebase"/></svg>Firebase</span>
-        <span class="tk"><svg class="bico"><use href="#b-typescript"/></svg>TypeScript</span>
-        <span class="tk"><svg class="bico"><use href="#b-python"/></svg>Python</span>
-        <span class="tk"><svg class="bico"><use href="#b-capacitor"/></svg>Capacitor</span>
-        <span class="tk"><svg class="bico"><use href="#b-fastapi"/></svg>FastAPI</span>
-        <span class="tk"><svg class="bico"><use href="#b-postgresql"/></svg>PostGIS</span>
-        <span class="tk"><svg class="bico"><use href="#b-claude"/></svg>Claude API</span>
-        <span class="tk"><svg class="bico"><use href="#b-d3dotjs"/></svg>D3.js</span>
-        <span class="tk"><svg class="bico"><use href="#b-googlecloud"/></svg>Cloud Run</span>
+        <span class="tk"><svg class="bico bc-react"><use href="#b-react"/></svg>React</span>
+        <span class="tk"><svg class="bico bc-firebase"><use href="#b-firebase"/></svg>Firebase</span>
+        <span class="tk"><svg class="bico bc-typescript"><use href="#b-typescript"/></svg>TypeScript</span>
+        <span class="tk"><svg class="bico bc-python"><use href="#b-python"/></svg>Python</span>
+        <span class="tk"><svg class="bico bc-capacitor"><use href="#b-capacitor"/></svg>Capacitor</span>
+        <span class="tk"><svg class="bico bc-fastapi"><use href="#b-fastapi"/></svg>FastAPI</span>
+        <span class="tk"><svg class="bico bc-postgresql"><use href="#b-postgresql"/></svg>PostGIS</span>
+        <span class="tk"><svg class="bico bc-claude"><use href="#b-claude"/></svg>Claude API</span>
+        <span class="tk"><svg class="bico bc-d3dotjs"><use href="#b-d3dotjs"/></svg>D3.js</span>
+        <span class="tk"><svg class="bico bc-googlecloud"><use href="#b-googlecloud"/></svg>Cloud Run</span>
       </div>
     </div>
   </div>
@@ -749,35 +806,35 @@
       <div class="tbx">
         <div class="tbx-group" data-reveal>
           <div class="tbx-cat"><span class="tbx-n">01</span> Languages</div>
-          <div class="tbx-tags"><span><svg class="bico"><use href="#b-typescript"/></svg>TypeScript</span><span><svg class="bico"><use href="#b-javascript"/></svg>JavaScript</span><span><svg class="bico"><use href="#b-python"/></svg>Python</span><span>SQL</span><span><svg class="bico"><use href="#b-gnubash"/></svg>Bash</span><span><svg class="bico"><use href="#b-html5"/></svg>HTML5</span><span>CSS3</span><span>YAML</span><span>JSON</span><span>VBA</span><span>Groovy</span><span>D2</span></div>
+          <div class="tbx-tags"><span><svg class="bico bc-typescript"><use href="#b-typescript"/></svg>TypeScript</span><span><svg class="bico bc-javascript"><use href="#b-javascript"/></svg>JavaScript</span><span><svg class="bico bc-python"><use href="#b-python"/></svg>Python</span><span>SQL</span><span><svg class="bico bc-gnubash"><use href="#b-gnubash"/></svg>Bash</span><span><svg class="bico bc-html5"><use href="#b-html5"/></svg>HTML5</span><span>CSS3</span><span>YAML</span><span>JSON</span><span>VBA</span><span>Groovy</span><span>D2</span></div>
         </div>
         <div class="tbx-group" data-reveal>
           <div class="tbx-cat"><span class="tbx-n">02</span> Frontend &amp; UI</div>
-          <div class="tbx-tags"><span><svg class="bico"><use href="#b-react"/></svg>React 19</span><span><svg class="bico"><use href="#b-vuedotjs"/></svg>Vue 3</span><span><svg class="bico"><use href="#b-vite"/></svg>Vite</span><span><svg class="bico"><use href="#b-tailwindcss"/></svg>Tailwind CSS</span><span>Zustand</span><span>React Router</span><span>i18next</span><span><svg class="bico"><use href="#b-d3dotjs"/></svg>D3.js</span><span><svg class="bico"><use href="#b-threedotjs"/></svg>Three.js</span><span><svg class="bico"><use href="#b-greensock"/></svg>GSAP</span><span>ScrollTrigger</span><span>Barba.js</span><span>Canvas 2D</span><span>WebGL</span><span>SVG</span><span>Lucide</span><span>PWA / Service Worker</span><span>Workbox</span><span>SheetJS</span><span>zxing-wasm</span><span>jsQR</span><span><svg class="bico"><use href="#b-streamlit"/></svg>Streamlit</span></div>
+          <div class="tbx-tags"><span><svg class="bico bc-react"><use href="#b-react"/></svg>React 19</span><span><svg class="bico bc-vuedotjs"><use href="#b-vuedotjs"/></svg>Vue 3</span><span><svg class="bico bc-vite"><use href="#b-vite"/></svg>Vite</span><span><svg class="bico bc-tailwindcss"><use href="#b-tailwindcss"/></svg>Tailwind CSS</span><span>Zustand</span><span>React Router</span><span>i18next</span><span><svg class="bico bc-d3dotjs"><use href="#b-d3dotjs"/></svg>D3.js</span><span><svg class="bico bc-threedotjs"><use href="#b-threedotjs"/></svg>Three.js</span><span><svg class="bico bc-greensock"><use href="#b-greensock"/></svg>GSAP</span><span>ScrollTrigger</span><span>Barba.js</span><span>Canvas 2D</span><span>WebGL</span><span>SVG</span><span>Lucide</span><span>PWA / Service Worker</span><span>Workbox</span><span>SheetJS</span><span>zxing-wasm</span><span>jsQR</span><span><svg class="bico bc-streamlit"><use href="#b-streamlit"/></svg>Streamlit</span></div>
         </div>
         <div class="tbx-group" data-reveal>
           <div class="tbx-cat"><span class="tbx-n">03</span> Maps &amp; Geospatial</div>
-          <div class="tbx-tags"><span>MapLibre GL</span><span><svg class="bico"><use href="#b-leaflet"/></svg>Leaflet</span><span>GeoPandas</span><span>Shapely</span><span>pyproj</span><span>pyogrio</span><span><svg class="bico"><use href="#b-postgresql"/></svg>PostGIS</span><span>GeoAlchemy2</span><span><svg class="bico"><use href="#b-openstreetmap"/></svg>OpenStreetMap</span><span><svg class="bico"><use href="#b-openstreetmap"/></svg>Overpass API</span><span>ArcGIS REST</span><span>GeoJSON</span></div>
+          <div class="tbx-tags"><span>MapLibre GL</span><span><svg class="bico bc-leaflet"><use href="#b-leaflet"/></svg>Leaflet</span><span>GeoPandas</span><span>Shapely</span><span>pyproj</span><span>pyogrio</span><span><svg class="bico bc-postgresql"><use href="#b-postgresql"/></svg>PostGIS</span><span>GeoAlchemy2</span><span><svg class="bico bc-openstreetmap"><use href="#b-openstreetmap"/></svg>OpenStreetMap</span><span><svg class="bico bc-openstreetmap"><use href="#b-openstreetmap"/></svg>Overpass API</span><span>ArcGIS REST</span><span>GeoJSON</span></div>
         </div>
         <div class="tbx-group" data-reveal>
           <div class="tbx-cat"><span class="tbx-n">04</span> Mobile &amp; Native</div>
-          <div class="tbx-tags"><span><svg class="bico"><use href="#b-capacitor"/></svg>Capacitor</span><span><svg class="bico"><use href="#b-android"/></svg>Android</span><span>iOS</span><span><svg class="bico"><use href="#b-capacitor"/></svg>Capacitor Camera</span><span>Geolocation</span><span>Filesystem</span><span>Preferences</span><span><svg class="bico"><use href="#b-firebase"/></svg>FCM Push</span><span><svg class="bico"><use href="#b-gradle"/></svg>Gradle</span><span><svg class="bico"><use href="#b-android"/></svg>AndroidX</span><span>MediaRecorder</span><span>Web Speech API</span></div>
+          <div class="tbx-tags"><span><svg class="bico bc-capacitor"><use href="#b-capacitor"/></svg>Capacitor</span><span><svg class="bico bc-android"><use href="#b-android"/></svg>Android</span><span>iOS</span><span><svg class="bico bc-capacitor"><use href="#b-capacitor"/></svg>Capacitor Camera</span><span>Geolocation</span><span>Filesystem</span><span>Preferences</span><span><svg class="bico bc-firebase"><use href="#b-firebase"/></svg>FCM Push</span><span><svg class="bico bc-gradle"><use href="#b-gradle"/></svg>Gradle</span><span><svg class="bico bc-android"><use href="#b-android"/></svg>AndroidX</span><span>MediaRecorder</span><span>Web Speech API</span></div>
         </div>
         <div class="tbx-group" data-reveal>
           <div class="tbx-cat"><span class="tbx-n">05</span> Backend</div>
-          <div class="tbx-tags"><span><svg class="bico"><use href="#b-fastapi"/></svg>FastAPI</span><span><svg class="bico"><use href="#b-express"/></svg>Express</span><span><svg class="bico"><use href="#b-firebase"/></svg>Firebase Cloud Functions</span><span><svg class="bico"><use href="#b-firebase"/></svg>Firebase Admin SDK</span><span>Uvicorn</span><span>Starlette</span><span><svg class="bico"><use href="#b-pydantic"/></svg>Pydantic</span><span>SQLAlchemy 2</span><span>asyncio</span><span>aiohttp</span><span>httpx</span><span>requests</span><span>axios</span><span>WebSockets</span><span>gRPC</span><span>Protocol Buffers</span><span>BeautifulSoup</span><span>Tenacity</span></div>
+          <div class="tbx-tags"><span><svg class="bico bc-fastapi"><use href="#b-fastapi"/></svg>FastAPI</span><span><svg class="bico bc-express"><use href="#b-express"/></svg>Express</span><span><svg class="bico bc-firebase"><use href="#b-firebase"/></svg>Firebase Cloud Functions</span><span><svg class="bico bc-firebase"><use href="#b-firebase"/></svg>Firebase Admin SDK</span><span>Uvicorn</span><span>Starlette</span><span><svg class="bico bc-pydantic"><use href="#b-pydantic"/></svg>Pydantic</span><span>SQLAlchemy 2</span><span>asyncio</span><span>aiohttp</span><span>httpx</span><span>requests</span><span>axios</span><span>WebSockets</span><span>gRPC</span><span>Protocol Buffers</span><span>BeautifulSoup</span><span>Tenacity</span></div>
         </div>
         <div class="tbx-group" data-reveal>
           <div class="tbx-cat"><span class="tbx-n">06</span> Integrations &amp; Connectors</div>
-          <div class="tbx-tags"><span>Wompi (payments)</span><span>The Odds API</span><span>football-data.org</span><span>ESPN API</span><span>FIFA API</span><span>Elo ratings</span><span>NASA POWER</span><span>Alpaca Markets</span><span><svg class="bico"><use href="#b-telegram"/></svg>Telegram Bot</span><span><svg class="bico"><use href="#b-twilio"/></svg>Twilio (SMS/WhatsApp)</span><span>Resend</span><span>Nodemailer</span><span><svg class="bico"><use href="#b-googledrive"/></svg>Google Drive API</span><span><svg class="bico"><use href="#b-googlesheets"/></svg>Google Sheets API</span><span>Google Play Developer API</span><span>US Census Geocoder</span><span>FEMA NFHL</span><span>CARTO Basemaps</span><span>Synthesia API</span><span>reCAPTCHA Enterprise</span><span>FHIR R4</span><span>pydataxm (XM/SIMEM)</span></div>
+          <div class="tbx-tags"><span>Wompi (payments)</span><span>The Odds API</span><span>football-data.org</span><span>ESPN API</span><span>FIFA API</span><span>Elo ratings</span><span>NASA POWER</span><span>Alpaca Markets</span><span><svg class="bico bc-telegram"><use href="#b-telegram"/></svg>Telegram Bot</span><span><svg class="bico bc-twilio"><use href="#b-twilio"/></svg>Twilio (SMS/WhatsApp)</span><span>Resend</span><span>Nodemailer</span><span><svg class="bico bc-googledrive"><use href="#b-googledrive"/></svg>Google Drive API</span><span><svg class="bico bc-googlesheets"><use href="#b-googlesheets"/></svg>Google Sheets API</span><span>Google Play Developer API</span><span>US Census Geocoder</span><span>FEMA NFHL</span><span>CARTO Basemaps</span><span>Synthesia API</span><span>reCAPTCHA Enterprise</span><span>FHIR R4</span><span>pydataxm (XM/SIMEM)</span></div>
         </div>
         <div class="tbx-group" data-reveal>
           <div class="tbx-cat"><span class="tbx-n">07</span> Databases &amp; Storage</div>
-          <div class="tbx-tags"><span><svg class="bico"><use href="#b-postgresql"/></svg>PostgreSQL</span><span><svg class="bico"><use href="#b-postgresql"/></svg>PostGIS</span><span><svg class="bico"><use href="#b-supabase"/></svg>Supabase</span><span><svg class="bico"><use href="#b-firebase"/></svg>Cloud Firestore</span><span><svg class="bico"><use href="#b-firebase"/></svg>Firebase Auth</span><span><svg class="bico"><use href="#b-firebase"/></svg>Firebase Storage</span><span>IndexedDB</span><span><svg class="bico"><use href="#b-sqlite"/></svg>Capacitor SQLite</span><span><svg class="bico"><use href="#b-duckdb"/></svg>DuckDB</span><span>Apache Parquet</span><span>Apache Arrow</span><span>psycopg 3</span></div>
+          <div class="tbx-tags"><span><svg class="bico bc-postgresql"><use href="#b-postgresql"/></svg>PostgreSQL</span><span><svg class="bico bc-postgresql"><use href="#b-postgresql"/></svg>PostGIS</span><span><svg class="bico bc-supabase"><use href="#b-supabase"/></svg>Supabase</span><span><svg class="bico bc-firebase"><use href="#b-firebase"/></svg>Cloud Firestore</span><span><svg class="bico bc-firebase"><use href="#b-firebase"/></svg>Firebase Auth</span><span><svg class="bico bc-firebase"><use href="#b-firebase"/></svg>Firebase Storage</span><span>IndexedDB</span><span><svg class="bico bc-sqlite"><use href="#b-sqlite"/></svg>Capacitor SQLite</span><span><svg class="bico bc-duckdb"><use href="#b-duckdb"/></svg>DuckDB</span><span>Apache Parquet</span><span>Apache Arrow</span><span>psycopg 3</span></div>
         </div>
         <div class="tbx-group" data-reveal>
           <div class="tbx-cat"><span class="tbx-n">08</span> Data, ML &amp; Quant</div>
-          <div class="tbx-tags"><span><svg class="bico"><use href="#b-pandas"/></svg>pandas</span><span><svg class="bico"><use href="#b-numpy"/></svg>NumPy</span><span><svg class="bico"><use href="#b-scipy"/></svg>SciPy</span><span><svg class="bico"><use href="#b-scikitlearn"/></svg>scikit-learn</span><span>statsmodels</span><span>LightGBM</span><span>XGBoost</span><span>Numba</span><span><svg class="bico"><use href="#b-polars"/></svg>Polars</span><span><svg class="bico"><use href="#b-dask"/></svg>Dask</span><span>PyArrow</span><span>xarray</span><span>NetworkX</span><span>RapidFuzz</span><span>StatsForecast</span><span>SARIMAX</span><span>matplotlib</span><span>seaborn</span><span><svg class="bico"><use href="#b-plotly"/></svg>Plotly</span><span>yfinance</span><span>numpy-financial</span><span>Monte Carlo</span></div>
+          <div class="tbx-tags"><span><svg class="bico bc-pandas"><use href="#b-pandas"/></svg>pandas</span><span><svg class="bico bc-numpy"><use href="#b-numpy"/></svg>NumPy</span><span><svg class="bico bc-scipy"><use href="#b-scipy"/></svg>SciPy</span><span><svg class="bico bc-scikitlearn"><use href="#b-scikitlearn"/></svg>scikit-learn</span><span>statsmodels</span><span>LightGBM</span><span>XGBoost</span><span>Numba</span><span><svg class="bico bc-polars"><use href="#b-polars"/></svg>Polars</span><span><svg class="bico bc-dask"><use href="#b-dask"/></svg>Dask</span><span>PyArrow</span><span>xarray</span><span>NetworkX</span><span>RapidFuzz</span><span>StatsForecast</span><span>SARIMAX</span><span>matplotlib</span><span>seaborn</span><span><svg class="bico bc-plotly"><use href="#b-plotly"/></svg>Plotly</span><span>yfinance</span><span>numpy-financial</span><span>Monte Carlo</span></div>
         </div>
         <div class="tbx-group" data-reveal>
           <div class="tbx-cat"><span class="tbx-n">09</span> Optimization &amp; Energy</div>
@@ -785,15 +842,15 @@
         </div>
         <div class="tbx-group" data-reveal>
           <div class="tbx-cat"><span class="tbx-n">10</span> AI &amp; LLM</div>
-          <div class="tbx-tags"><span><svg class="bico"><use href="#b-claude"/></svg>Anthropic Claude API</span><span><svg class="bico"><use href="#b-claude"/></svg>Claude SDK</span><span><svg class="bico"><use href="#b-claude"/></svg>Claude vision</span><span>Tesseract.js OCR</span><span>pdfplumber</span><span>pypdf</span><span><svg class="bico"><use href="#b-googlegemini"/></svg>Google Gemini</span></div>
+          <div class="tbx-tags"><span><svg class="bico bc-claude"><use href="#b-claude"/></svg>Anthropic Claude API</span><span><svg class="bico bc-claude"><use href="#b-claude"/></svg>Claude SDK</span><span><svg class="bico bc-claude"><use href="#b-claude"/></svg>Claude vision</span><span>Tesseract.js OCR</span><span>pdfplumber</span><span>pypdf</span><span><svg class="bico bc-googlegemini"><use href="#b-googlegemini"/></svg>Google Gemini</span></div>
         </div>
         <div class="tbx-group" data-reveal>
           <div class="tbx-cat"><span class="tbx-n">11</span> Cloud &amp; DevOps</div>
-          <div class="tbx-tags"><span><svg class="bico"><use href="#b-firebase"/></svg>Firebase Hosting</span><span><svg class="bico"><use href="#b-googlecloud"/></svg>Cloud Run</span><span><svg class="bico"><use href="#b-googlecloud"/></svg>Cloud Functions</span><span><svg class="bico"><use href="#b-googlecloud"/></svg>Cloud Scheduler</span><span><svg class="bico"><use href="#b-firebase"/></svg>Firebase App Check</span><span><svg class="bico"><use href="#b-firebase"/></svg>Firebase CLI</span><span><svg class="bico"><use href="#b-firebase"/></svg>Emulator Suite</span><span><svg class="bico"><use href="#b-docker"/></svg>Docker</span><span><svg class="bico"><use href="#b-n8n"/></svg>n8n</span><span><svg class="bico"><use href="#b-git"/></svg>Git</span><span><svg class="bico"><use href="#b-github"/></svg>GitHub</span><span>Git hooks</span><span>Power BI</span></div>
+          <div class="tbx-tags"><span><svg class="bico bc-firebase"><use href="#b-firebase"/></svg>Firebase Hosting</span><span><svg class="bico bc-googlecloud"><use href="#b-googlecloud"/></svg>Cloud Run</span><span><svg class="bico bc-googlecloud"><use href="#b-googlecloud"/></svg>Cloud Functions</span><span><svg class="bico bc-googlecloud"><use href="#b-googlecloud"/></svg>Cloud Scheduler</span><span><svg class="bico bc-firebase"><use href="#b-firebase"/></svg>Firebase App Check</span><span><svg class="bico bc-firebase"><use href="#b-firebase"/></svg>Firebase CLI</span><span><svg class="bico bc-firebase"><use href="#b-firebase"/></svg>Emulator Suite</span><span><svg class="bico bc-docker"><use href="#b-docker"/></svg>Docker</span><span><svg class="bico bc-n8n"><use href="#b-n8n"/></svg>n8n</span><span><svg class="bico bc-git"><use href="#b-git"/></svg>Git</span><span><svg class="bico bc-github"><use href="#b-github"/></svg>GitHub</span><span>Git hooks</span><span>Power BI</span></div>
         </div>
         <div class="tbx-group" data-reveal>
           <div class="tbx-cat"><span class="tbx-n">12</span> Testing &amp; Tooling</div>
-          <div class="tbx-tags"><span><svg class="bico"><use href="#b-vitest"/></svg>Vitest</span><span><svg class="bico"><use href="#b-playwright"/></svg>Playwright</span><span><svg class="bico"><use href="#b-pytest"/></svg>pytest</span><span>MSW</span><span><svg class="bico"><use href="#b-vuedotjs"/></svg>Vue Test Utils</span><span>jsdom</span><span><svg class="bico"><use href="#b-eslint"/></svg>ESLint</span><span><svg class="bico"><use href="#b-esbuild"/></svg>esbuild</span><span><svg class="bico"><use href="#b-postcss"/></svg>PostCSS</span><span>Autoprefixer</span><span><svg class="bico"><use href="#b-zod"/></svg>Zod</span><span>pandera</span><span><svg class="bico"><use href="#b-ffmpeg"/></svg>FFmpeg</span><span><svg class="bico"><use href="#b-anaconda"/></svg>Conda</span><span><svg class="bico"><use href="#b-jupyter"/></svg>Jupyter</span><span>sharp</span></div>
+          <div class="tbx-tags"><span><svg class="bico bc-vitest"><use href="#b-vitest"/></svg>Vitest</span><span><svg class="bico bc-playwright"><use href="#b-playwright"/></svg>Playwright</span><span><svg class="bico bc-pytest"><use href="#b-pytest"/></svg>pytest</span><span>MSW</span><span><svg class="bico bc-vuedotjs"><use href="#b-vuedotjs"/></svg>Vue Test Utils</span><span>jsdom</span><span><svg class="bico bc-eslint"><use href="#b-eslint"/></svg>ESLint</span><span><svg class="bico bc-esbuild"><use href="#b-esbuild"/></svg>esbuild</span><span><svg class="bico bc-postcss"><use href="#b-postcss"/></svg>PostCSS</span><span>Autoprefixer</span><span><svg class="bico bc-zod"><use href="#b-zod"/></svg>Zod</span><span>pandera</span><span><svg class="bico bc-ffmpeg"><use href="#b-ffmpeg"/></svg>FFmpeg</span><span><svg class="bico bc-anaconda"><use href="#b-anaconda"/></svg>Conda</span><span><svg class="bico bc-jupyter"><use href="#b-jupyter"/></svg>Jupyter</span><span>sharp</span></div>
         </div>
       </div>
     </div>
