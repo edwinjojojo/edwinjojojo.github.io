@@ -385,6 +385,7 @@
       <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
       <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.5-7.97A5.5 5.5 0 0 1 17 9.5a3.5 3.5 0 0 1-.5 8.5H7z"/></symbol>
       <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.7 5.3L19 10l-5.3 1.7L12 17l-1.7-5.3L7 10l5.3-1.7L12 3z"/><path d="M19 14l.8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8L19 14z"/></symbol>
+      <symbol id="i-voice" viewBox="0 0 24 24"><path d="M4 10v4M8 6.5v11M12 3v18M16 6.5v11M20 10v4"/></symbol>
       <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 4v16h16"/><path d="M7 14l3.5-4 3 3L19 7"/></symbol>
       <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
       <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></symbol>
@@ -552,6 +553,35 @@
       </div>
 
       <div class="work-grid">
+
+        <!-- Featured: 2daVoz (most personal) -->
+        <article class="case wide" data-reveal>
+          <div class="case-head">
+            <div class="case-ico"><svg class="ico"><use href="#i-voice"/></svg></div>
+            <span class="case-status">● In progress · Private repo</span>
+          </div>
+          <div class="case-body">
+            <div>
+              <div class="case-kicker">Assistive tech · Voice cloning · Personal</div>
+              <h3 class="case-name">2daVoz</h3>
+              <p class="case-desc">When my mother was diagnosed with tongue cancer and faced surgery that would change her speech, I built 2daVoz to bank and recreate her voice — so she can keep communicating, in her own voice, through a touch (AAC) device. A fully local, free pipeline: it recovers her voice from phone-call recordings (speaker-separated with pyannote) plus a clean reading corpus, transcribes with faster-whisper, and fine-tunes a Spanish F5-TTS model on her voice. Synthesis runs offline on a 4&nbsp;GB laptop GPU — her voice never leaves home and there are no paid services. I also profile her voice acoustically (Praat) and score clone fidelity with speaker embeddings.</p>
+              <div class="case-foot">
+                <div class="case-stack">
+                  <span>Python</span><span>F5-TTS</span><span>faster-whisper</span><span>PyTorch</span><span>pyannote</span><span>Praat</span><span>sherpa-onnx</span><span>ffmpeg</span>
+                </div>
+                <div class="case-links">
+                  <span class="case-link muted">Private — family health data</span>
+                </div>
+              </div>
+            </div>
+            <div class="case-mags">
+              <div class="mag"><b>100%</b><span>local · offline</span></div>
+              <div class="mag"><b>$0</b><span>subscriptions</span></div>
+              <div class="mag"><b>24</b><span>recordings recovered</span></div>
+              <div class="mag"><b>4 GB</b><span>GPU footprint</span></div>
+            </div>
+          </div>
+        </article>
 
         <!-- Featured: La Gran Poya -->
         <article class="case wide" data-reveal>
