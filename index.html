@@ -388,6 +388,7 @@
       <symbol id="i-voice" viewBox="0 0 24 24"><path d="M4 10v4M8 6.5v11M12 3v18M16 6.5v11M20 10v4"/></symbol>
       <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 4v16h16"/><path d="M7 14l3.5-4 3 3L19 7"/></symbol>
       <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+      <symbol id="i-building" viewBox="0 0 24 24"><path d="M4 21V6a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v15"/><path d="M14 21V10h5a1 1 0 0 1 1 1v10"/><path d="M7 9h3M7 13h3M7 17h3M2 21h20"/></symbol>
       <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></symbol>
       <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></symbol>
       <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
@@ -564,10 +565,10 @@
             <div>
               <div class="case-kicker">Assistive tech · Voice cloning · Personal</div>
               <h3 class="case-name">2daVoz</h3>
-              <p class="case-desc">When my mother was diagnosed with tongue cancer and faced surgery that would change her speech, I built 2daVoz to bank and recreate her voice — so she can keep communicating, in her own voice, through a touch (AAC) device. A fully local, free pipeline: it recovers her voice from phone-call recordings (speaker-separated with pyannote) plus a clean reading corpus, transcribes with faster-whisper, and fine-tunes a Spanish F5-TTS model on her voice. Synthesis runs offline on a 4&nbsp;GB laptop GPU — her voice never leaves home and there are no paid services. I also profile her voice acoustically (Praat) and score clone fidelity with speaker embeddings.</p>
+              <p class="case-desc">When my mother was diagnosed with tongue cancer and faced surgery that would change her speech, I built 2daVoz to bank and recreate her voice — so she can keep communicating, in her own voice, through a touch (AAC) device. A fully local, free pipeline: it recovers her voice from phone-call recordings (speaker-separated with pyannote) plus a clean reading corpus, transcribes with faster-whisper, and fine-tunes a Spanish F5-TTS model on her voice. Synthesis runs offline on a 4&nbsp;GB laptop GPU — her voice never leaves home and there are no paid services. I also profile her voice acoustically (Praat) and score clone fidelity with speaker embeddings. The on-device AAC layer is already designed — AsTeRICS Grid (an offline PWA) paired with a hybrid voice: an F5 phrase bank plus a fine-tuned Piper voice in SherpaTTS for free text — and the pipeline is validated end to end: on a clean wideband recording the clone already scores as the same speaker (ECAPA embeddings), proving fidelity is gated by capture quality, not the model.</p>
               <div class="case-foot">
                 <div class="case-stack">
-                  <span>Python</span><span>F5-TTS</span><span>faster-whisper</span><span>PyTorch</span><span>pyannote</span><span>Praat</span><span>sherpa-onnx</span><span>ffmpeg</span>
+                  <span>Python</span><span>F5-TTS</span><span>faster-whisper</span><span>PyTorch</span><span>pyannote</span><span>Praat</span><span>sherpa-onnx</span><span>AsTeRICS Grid</span><span>ffmpeg</span>
                 </div>
                 <div class="case-links">
                   <span class="case-link muted">Private — family health data</span>
@@ -669,6 +670,46 @@
           <div class="case-foot">
             <div class="case-stack"><span>JavaScript</span><span>D3.js v7</span><span>SVG</span><span>Firebase Hosting</span></div>
             <div class="case-links"><a class="case-link" href="https://atletaone.web.app" target="_blank" rel="noopener">Live site <svg class="ico"><use href="#i-ext"/></svg></a></div>
+          </div>
+        </article>
+
+        <!-- APPministrador -->
+        <article class="case" data-reveal>
+          <div class="case-head">
+            <div class="case-ico"><svg class="ico"><use href="#i-building"/></svg></div>
+            <span class="case-status live">● Live · multi-tenant</span>
+          </div>
+          <div class="case-kicker">Product · SaaS / PropTech</div>
+          <h3 class="case-name">APPministrador</h3>
+          <p class="case-desc">A multi-tenant SaaS for running Colombian homeowner associations (Ley 675). Eighteen billable modules — receivables, finance, reservations, visitors, announcements, contracts, documents, EV smart-charging, access control and a grounded AI assistant — are switched on per building from a superadmin console with usage-based billing. A Vue 3 PWA over an Express API on Cloud Functions, with Firestore fully closed to the client: every request is authorized server-side by a Firebase ID token.</p>
+          <div class="case-mags">
+            <div class="mag"><b>18</b><span>billable modules</span></div>
+            <div class="mag"><b>6</b><span>roles · RBAC</span></div>
+            <div class="mag"><b>CI/CD</b><span>deploy on push</span></div>
+          </div>
+          <div class="case-foot">
+            <div class="case-stack"><span>Vue 3</span><span>TypeScript</span><span>Tailwind</span><span>Cloud Functions</span><span>Firestore</span><span>PWA</span></div>
+            <div class="case-links"><a class="case-link" href="https://appministrador-app.web.app" target="_blank" rel="noopener">Live site <svg class="ico"><use href="#i-ext"/></svg></a></div>
+          </div>
+        </article>
+
+        <!-- C2K -->
+        <article class="case" data-reveal>
+          <div class="case-head">
+            <div class="case-ico"><svg class="ico"><use href="#i-menu"/></svg></div>
+            <span class="case-status live">● Live · production</span>
+          </div>
+          <div class="case-kicker">Product · SaaS / Restaurants</div>
+          <h3 class="case-name">C2K — Cliente to Kitchen</h3>
+          <p class="case-desc">A multi-tenant SaaS that wires a restaurant's diners straight to its kitchen: a QR menu with three photo-first templates, self-service ordering, a real-time kitchen display with per-step timing, a drag-and-drop SVG floor plan with point-in-polygon waiter zones, delivery with live MapLibre tracking, lot-based FIFO inventory, an order-derived CRM, and an AI owner assistant. Payments are confirmed by webhook, never by the client.</p>
+          <div class="case-mags">
+            <div class="mag"><b>8</b><span>modules</span></div>
+            <div class="mag"><b>Realtime</b><span>kitchen · tables</span></div>
+            <div class="mag"><b>QR</b><span>app-free menu</span></div>
+          </div>
+          <div class="case-foot">
+            <div class="case-stack"><span>React</span><span>Vite</span><span>Firebase</span><span>Cloud Functions</span><span>MapLibre</span><span>WhatsApp API</span></div>
+            <div class="case-links"><a class="case-link" href="https://c2k-app.web.app" target="_blank" rel="noopener">Live site <svg class="ico"><use href="#i-ext"/></svg></a></div>
           </div>
         </article>
 
@@ -818,7 +859,7 @@
       <div class="stats-head mono" data-reveal>02 — The portfolio, in numbers</div>
       <div class="stats-grid">
         <div class="st" data-reveal><div class="num">8<span class="sfx">+</span></div><div class="label">Products live in production right now</div></div>
-        <div class="st" data-reveal><div class="num">11</div><div class="label">Projects designed &amp; shipped end to end</div></div>
+        <div class="st" data-reveal><div class="num">13</div><div class="label">Projects designed &amp; shipped end to end</div></div>
         <div class="st" data-reveal><div class="num">3</div><div class="label">Platforms — web, Android, iOS — from one codebase</div></div>
         <div class="st" data-reveal><div class="num">$0<span class="sfx">·</span></div><div class="label">Typical infra cost on a free-tier serverless stack</div></div>
       </div>
